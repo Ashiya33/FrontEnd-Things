@@ -1,5 +1,7 @@
 body {
     font-family: 'JetBrains Mono', monospace;
+    background-color: #222;
+
 }
 
 #intro {
@@ -8,18 +10,30 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    
     text-align: center;
     text-decoration: none;
 }
-
+h2 {
+    font-variant: small-caps;
+    font-size: 38px;
+    margin: 0%;
+}
+h2:hover {
+    text-decoration-line: line-through;
+}
 .card1 {
-   padding: 16px;
+    padding: 16px;
     border-radius: 8px;
     background-color: darksalmon;
     width: 800px;
     margin: 0%;
     
 }
+.card1 h1:hover {
+    text-decoration-line: line-through;
+}
+
 .card1 h1 {
     font-size: 64px;
     font-variant: small-caps;
@@ -47,10 +61,20 @@ body {
     margin: 0%;
     
 }
+.card3 a {
+    color: #222;
+    margin: 0 10px;
+    font-size: 2rem;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.card3 a:hover {
+    color: white;
+}
 hr {
     border: none;
     border-top: 1px solid black;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 50px;
+    margin-right: 50px;
     
 }
