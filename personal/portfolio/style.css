@@ -1,8 +1,8 @@
 :root {
-  --main-bg: #222;
-  --card1-bg: darksalmon;
+  --main-bg: #141414;
+  --card1-bg: darkgrey;
   --card2-bg: darkgrey;
-  --card3-bg: darkcyan;
+  --card3-bg: #008b8b;
   --accent: #222;
   --hover: white;
   --hr: black;
@@ -83,6 +83,27 @@ h2:hover {
 }
 .card3 a:hover {
     color: var(--hover);
+}
+.card4 {
+    padding: 16px;
+    border-radius: 8px;
+    background-color: var(--card3-bg);
+    max-width: 90vw;
+    width: 700px;
+    margin: 0%;
+    
+}
+.card4 a {
+    text-transform: uppercase;
+    color: var(--hr);
+    font-size: 32px;
+    text-decoration: none;
+
+}
+.card4 a:hover {
+    color: var(--hover);
+    text-decoration-line: line-through;
+    
 }
 hr {
     border: none;
