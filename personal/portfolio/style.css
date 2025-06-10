@@ -1,16 +1,15 @@
 :root {
   --main-bg: #141414;
-  --card1-bg: darkgrey;
-  --card2-bg: darkgrey;
+  --card1-bg: darksalmon;
   --card3-bg: #008b8b;
-  --accent: #222;
   --hover: white;
   --hr: black;
+ 
 }
 
 body {
     font-family: 'JetBrains Mono', monospace;
-    background-color: var(--main-bg);
+    background-color: var(--main-bg);    
 
 }
 
@@ -19,96 +18,98 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
-    
+    min-height: 100vh;    
     text-align: center;
-    text-decoration: none;
+    
+}
+hr {
+    border: none;
+    border-top: 1px solid var(--hr);
+    margin: 6px;
+    
+}
+h1 {
+    font-size: 2.2rem;
+    letter-spacing: 9px;
+    margin: 0%;
+}
+h1:hover {
+    text-decoration-line: line-through;
 }
 h2 {
-    font-variant: small-caps;
-    font-size: 38px;
-    margin: 0%;
+    font-size: 1.2rem;
+    margin: 1%;
+    padding-bottom: 6px;
+    letter-spacing: 6px;
+        
 }
 h2:hover {
     text-decoration-line: line-through;
 }
-.card1 {
+
+.card1, .card2, .card3, .card4 {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
     padding: 16px;
-    border-radius: 8px;
-    background-color: var(--card1-bg);
-    max-width: 90vw;
-    width: 700px;
-    margin: 0%;
+    border-radius: 18px;
+    border: var(--hr) 4px solid;
     
 }
-.card1 h1:hover {
-    text-decoration-line: line-through;
-}
 
-.card1 h1 {
-    font-size: 64px;
-    font-variant: small-caps;
-    margin: 0%;
-}
-
-.card2 {
-    padding: 16px;
-    border-radius: 8px;
-    background-color: var(--card2-bg);
-    max-width: 90vw;
-    width: 700px;
-    margin: 0%;
+.card1, .card2 {
+     background-color: var(--card1-bg);
     
 }
+.card3, .card4 {
+    background-color: var(--card3-bg);
+       
+}
+
+.card1 blockquote{
+    font-size: 0.95rem;
+}
+ 
 .card2 p {
     font-style: italic;
-    margin: 0%;
+    margin: 1%;
+}
 
-}
-.card3 {
-    padding: 16px;
-    border-radius: 8px;
-    background-color: var(--card3-bg);
-    max-width: 90vw;
-    width: 700px;
-    margin: 0%;
-    
-}
 .card3 a {
-    color: var(--accent);
+    color: var(--hr);
     margin: 0 10px;
     font-size: 2rem;
     text-decoration: none;
     transition: color 0.2s;
+    
 }
 .card3 a:hover {
     color: var(--hover);
 }
-.card4 {
-    padding: 16px;
-    border-radius: 8px;
-    background-color: var(--card3-bg);
-    max-width: 90vw;
-    width: 700px;
-    margin: 0%;
-    
-}
-.card4 a {
-    text-transform: uppercase;
-    color: var(--hr);
-    font-size: 32px;
-    text-decoration: none;
 
+.card4 a{
+    font-variant: small-caps;
+    color: var(--hr);
+    font-size: 1.8rem;
+    text-decoration: none;   
+    
 }
 .card4 a:hover {
     color: var(--hover);
     text-decoration-line: line-through;
     
 }
-hr {
-    border: none;
-    border-top: 1px solid var(--hr);
-    margin-left: 50px;
-    margin-right: 50px;
-    
+
+@media (max-width: 600px) {
+    .card1, .card2, .card3, .card4 {
+        padding: 8px;
+        max-width: 98vw;
+    }
+    h1, h2, h3 {
+        font-size: 1.2em;
+        letter-spacing: 6px;
+    }
+    .card4 a {
+        font-size: 1.2em;
+    }
 }
