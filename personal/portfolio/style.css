@@ -1,6 +1,16 @@
+:root {
+  --main-bg: #141414;
+  --card1-bg: darkgrey;
+  --card2-bg: darkgrey;
+  --card3-bg: #008b8b;
+  --accent: #222;
+  --hover: white;
+  --hr: black;
+}
+
 body {
     font-family: 'JetBrains Mono', monospace;
-    background-color: #222;
+    background-color: var(--main-bg);
 
 }
 
@@ -25,8 +35,9 @@ h2:hover {
 .card1 {
     padding: 16px;
     border-radius: 8px;
-    background-color: darksalmon;
-    width: 800px;
+    background-color: var(--card1-bg);
+    max-width: 90vw;
+    width: 700px;
     margin: 0%;
     
 }
@@ -43,37 +54,60 @@ h2:hover {
 .card2 {
     padding: 16px;
     border-radius: 8px;
-    background-color: darkgrey;
-    width: 800px;
+    background-color: var(--card2-bg);
+    max-width: 90vw;
+    width: 700px;
     margin: 0%;
     
 }
 .card2 p {
     font-style: italic;
-    margin: 16px;
+    margin: 0%;
 
 }
 .card3 {
     padding: 16px;
     border-radius: 8px;
-    background-color: darkcyan;
-    width: 800px;
+    background-color: var(--card3-bg);
+    max-width: 90vw;
+    width: 700px;
     margin: 0%;
     
 }
 .card3 a {
-    color: #222;
+    color: var(--accent);
     margin: 0 10px;
     font-size: 2rem;
     text-decoration: none;
     transition: color 0.2s;
 }
 .card3 a:hover {
-    color: white;
+    color: var(--hover);
+}
+.card4 {
+    padding: 16px;
+    border-radius: 8px;
+    background-color: var(--card3-bg);
+    max-width: 90vw;
+    width: 700px;
+    margin: 0%;
+    
+}
+.card4 a {
+    text-transform: uppercase;
+    color: var(--hr);
+    font-size: 32px;
+    text-decoration: none;
+
+}
+.card4 a:hover {
+    color: var(--hover);
+    text-decoration-line: line-through;
+    
 }
 hr {
     border: none;
-    border-top: 1px solid black;
+    border-top: 1px solid var(--hr);
     margin-left: 50px;
     margin-right: 50px;
     
