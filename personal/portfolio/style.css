@@ -103,13 +103,20 @@ h2:hover {
 @media (max-width: 600px) {
     .card1, .card2, .card3, .card4 {
         padding: 8px;
-        max-width: 98vw;
+        max-width: 90vw;
     }
-    h1, h2, h3 {
-        font-size: 1.2em;
+    h1 {
+        font-size: 1.3em;
         letter-spacing: 6px;
     }
+    h2{
+        font-size: 0.90rem;
+        text-wrap-style: balance;
+    }
+    p {
+        font-size: 0.80rem;
+    }
     .card4 a {
-        font-size: 1.2em;
+        font-size: 1.3em;
     }
 }
